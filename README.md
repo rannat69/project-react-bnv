@@ -35,5 +35,6 @@ Then access the website at this address : http://localhost:3000
 
 # To do : 
 
-Add Crypto Wallet sign in using either directly METAMASK or WALLET CONNECT
-PC version of the website
+- Add Crypto Wallet sign in using either directly METAMASK or WALLET CONNECT
+  
+- PC version of the website
