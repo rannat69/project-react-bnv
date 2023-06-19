@@ -13,8 +13,6 @@ import insta from './assets/insta.svg'
 import linkedin from './assets/linkedin.svg'
 import bof from './assets/bof.svg'
 
-import {  useEffect, useState } from 'react';
-
 import { FlatList,  StyleSheet,
   Button,
   View, ImageBackground,
