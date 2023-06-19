@@ -1,0 +1,75 @@
+{
+  "name": "my-fast-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@metamask/sdk": "^0.3.2",
+    "@react-native-async-storage/async-storage": "^1.18.2",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@web3modal/react-native": "^1.0.0-alpha.8",
+    "crypto": "^1.0.1",
+    "events": "^3.3.0",
+    "mongodb": "^5.6.0",
+    "next": "^13.4.6",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "^0.71.11",
+    "react-native-background-timer": "^2.4.1",
+    "react-native-crypto": "^2.2.0",
+    "react-native-get-random-values": "^1.9.0",
+    "react-native-modal": "^13.0.1",
+    "react-native-randombytes": "^3.6.1",
+    "react-native-svg": "^13.9.0",
+    "react-native-web": "^0.19.5",
+    "react-scripts": "5.0.1",
+    "readable-stream": "^1.0.33",
+    "rn-nodeify": "^10.3.0",
+    "stream": "^0.0.2",
+    "stream-browserify": "^1.0.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "rn-nodeify --install 'crypto,process,stream,events' --hack"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "react-native": {
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  },
+  "browser": {
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify"
+  }
+}
