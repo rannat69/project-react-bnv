@@ -8,6 +8,9 @@ Every connection to it is logged in a MongoDB base.
 # Prerequisites
 NodeJS
 
+# Library used
+react-native
+
 # Installation and configuration
 Open the installation directory with a terminal and type 
 
@@ -24,6 +27,13 @@ Go to the server directory and type
 
 npm start
 
-Then go to the installation directory and typpe 
+Then go to the installation directory and type 
 
 npm start
+
+Then access the website at this address : http://localhost:3000
+
+# To do : 
+
+Add Crypto Wallet sign in using either directly METAMASK or WALLET CONNECT
+PC version of the website
