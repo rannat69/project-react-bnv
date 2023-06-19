@@ -52,40 +52,15 @@
   
 }
 
-a:link {
-  text-decoration: none;
-}
 
-a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
-
-/* unvisited link */
-a:link {
+button{
+  background-color: #000000;
   color: grey;
-}
-
-/* visited link */
-a:visited {
-  color: grey;
+  text-align: left;
+  border-width: 0;
 }
 
 /* mouse over link */
-a:hover {
+button:hover {
   color: white;
 }
-
-/* selected link */
-a:active {
-  color: grey;
-}
-
-

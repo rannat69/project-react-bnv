@@ -1,4 +1,3 @@
-import logo from './assets/logo.svg';
 import navbar from './assets/320px Nav Bar.svg'
 import ss1 from './assets/Screen Shot 2021-07-14 at 5.14 1.png'
 import rect1 from './assets/Group 1080.svg'
@@ -13,12 +12,9 @@ import insta from './assets/insta.svg'
 import linkedin from './assets/linkedin.svg'
 import bof from './assets/bof.svg'
 
-import { FlatList,  StyleSheet,
-  Button,
+import {  StyleSheet,
   View, ImageBackground,
-  SafeAreaView,
-  Text, TextInput, TouchableHighlight,
-  Alert} from 'react-native';  
+  Text, TextInput, TouchableHighlight} from 'react-native';  
 import './App.css';
 
 //import TestMongo from './mongodb.js';
@@ -154,11 +150,11 @@ function App() {
 		backgroundColor: '#000000',
       }}>
 
-<img src={navbar}/>
+<img src={navbar} alt="Navbar"/>
 
 
 <View style={styles.imageWrapper}>
-     <ImageBackground style={styles.theImage} source={ss1}>
+     <ImageBackground style={styles.theImage} source={ss1} alt="White jacket">
 	 
 			<MyButton text='Jack Irving' style={styles.buttonGreyTransp} styleText={styles.textWhite} width={{width: "30%"}} />
 			
@@ -168,7 +164,7 @@ function App() {
 	  	    <View style={styles.bottomView}>
 			<MyButton text='Buy Now' style={styles.buttonGreen} styleText={styles.textBlack} width={{width: "30%"}} />
 			 
-			<img src={rect1} style={{height: "50%", width: "50%",}}/>
+			<img src={rect1} style={{height: "50%", width: "50%",}} alt="3 squares with brands"/>
 			</View>
 			 
      </ImageBackground>
@@ -177,7 +173,7 @@ function App() {
 	<Text style={styles.textWhiteBold}>Our Campaigns and Drops</Text>
 
 <View style={styles.imageWrapper}>
-<ImageBackground style={styles.theImage} source={live}>
+<ImageBackground style={styles.theImage} source={live} alt="Live">
 		  
 		  	  	    <MyButton text='Ends in 19 days 12h 2min 3s' style={styles.buttonGreen} styleText={styles.textBlack} width={{width: "60%"}} />
 		  
@@ -190,7 +186,7 @@ function App() {
 			<View style={styles.imageWrapper}>
 			 <Text style={styles.textWhiteBold}>Wearables in the Metaverse</Text>
 			 
-		  <img src={image2} style={{borderRadius:30}}/>
+		  <img src={image2} style={{borderRadius:30}} alt="Red bubbles Gif"/>
 		  </View>
 		  
  			<MyButton text='DECENTRALAND' style={styles.buttonGrey} styleText={styles.textWhite} width={{width: "50%"}} />
@@ -198,7 +194,7 @@ function App() {
 		  <Text style={styles.textWhite}>Discover like-minded people. In Decentraland, many thousands of creators are building interesting things</Text>
 	
 	<View style={styles.imageWrapper}>
-		<img src={rect2}/>
+		<img src={rect2} alt="Bear head"/>
 	 </View>
 		 
 		<MyButton text='SANDBOX' style={styles.buttonGrey} styleText={styles.textWhite} width={{width: "50%"}} />
@@ -206,7 +202,7 @@ function App() {
 		<Text style={styles.textWhite}>Discover like-minded people. In Decentraland, many thousands of creators are building interesting things</Text>
 		
 		<View style={styles.imageWrapper}>
-		<img src={image3} style={{borderRadius:30}}/>
+		<img src={image3} style={{borderRadius:30}} alt="Dancing rabbit"/>
 		</View>
 		
 		<Text style={styles.textWhite}>Discover like-minded people. In Decentraland, many thousands of creators are building interesting things</Text>
@@ -215,7 +211,7 @@ function App() {
 
 				<View style={styles.imageWrapperGrey}>
 		  		<View style={styles.imageWrapper}>
-		  		<img src={image4} style={{borderRadius:30}}/>
+		  		<img src={image4} style={{borderRadius:30}} alt="Glasses aug reality"/>
 				</View>
 				
 				<MyButton text='Try filter' style={styles.buttonGreen} styleText={styles.textBlack} width={{width: "50%"}} />
@@ -250,13 +246,13 @@ function App() {
 		<table>
 		<tr>
 		<td align="center">
-		<img src={discord}/>
+		<img src={discord} alt="Discord"/>
 		</td>
 		<td align="center">
-		<img src={twitter}/>
+		<img src={twitter} alt="Twitter"/>
 		</td>
 		<td align="center">
-		<img src={insta}/>
+		<img src={insta} alt="Instagram"/>
 		</td>
 		</tr>
 		</table>
@@ -268,7 +264,7 @@ function App() {
 
 
 		<Text style={styles.textWhiteBold}>We've been featured in</Text>
-		<img src={bof}/>
+		<img src={bof} alt="Bof"/>
 						
 		<Text style={styles.textWhite}>Sign up to get our top stories and auctions delivered</Text>
 		<TextInput
@@ -286,26 +282,26 @@ function App() {
 		<table>
 		<tr>
 		<td>
-		<img src={discord}/>
+		<img src={discord} alt="Discord"/>
 		</td>
 		<td>
-		<img src={twitter}/>
+		<img src={twitter} alt="Twitter"/>
 		</td>
 		<td>
-		<img src={insta}/>
+		<img src={insta} alt="Instagram"/>
 		</td>
 		<td>
-		<img src={linkedin}/>
+		<img src={linkedin} alt="Linkedin"/>
 		</td>
 		</tr>
 		</table>
 			
 <View style={styles.links}>	
-		<a href="">ABOUT </a>
-		<a href="">HELP CENTRE </a>
-		<a href="">TERMS AND CONDITIONS </a>
-		<a href="">PRIVACY POLICY </a>
-		<a href="">SUSTAINABILITY STATEMENT </a>
+		<button>ABOUT </button>
+		<button>HELP CENTRE </button>
+		<button>TERMS AND CONDITIONS </button>
+		<button>PRIVACY POLICY </button>
+		<button>SUSTAINABILITY STATEMENT </button>
 		</View>
 </View>
   );

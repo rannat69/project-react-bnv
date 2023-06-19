@@ -7,13 +7,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 function handleSubmit()  {
-	const [data, setData] = "" ;
+	const data = "" ;
 	console.log(data);
 
-	let [ user, setUser ] = "" ;
-	let [ time, setTime ] = "" ;
-	let toastOpen = false;
-  let setToastOpen = false;
+	let  user  = "" ;
+	let  time  = "" ;
 
   var sBrowser, sUsrAg = navigator.userAgent;
 
